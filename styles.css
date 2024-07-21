@@ -46,6 +46,11 @@ header {
     padding: 10px;
 }
 
+.navbar-menu a:hover{
+    color: #d40812;
+    background-color: #fff;
+    border-radius: 20px;
+}
 .navbar-actions {
     display: flex;
     align-items: center;
@@ -190,8 +195,8 @@ header {
    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-evenly;
+    padding: 10px;
     background-color: #f8f9fa; 
 }
 
@@ -325,8 +330,14 @@ header {
 }
 
 .blog-post {
-    margin-bottom: 20px;
+    justify-content: space-between;    
+    padding: 20px;
+    margin: 20px; /* Space between blog posts */
+    background-color: #ffffff; /* White background for each post */
+    border-radius: 4px; /* Rounded corners for the posts */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for each post */
 }
+
 
 .blog-post h3 {
     margin: 0 0 10px;
@@ -338,14 +349,19 @@ header {
     color: #666;
 }
 
-.blog-post a {
-    color: #0275d8;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.blog-post .btn {
+    display: inline-block; /* Allows setting padding and margins */
+    padding: 10px 15px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 4px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.blog-post a:hover {
-    color: #014c8c;
+.blog-post .btn:hover {
+    background-color: #fff; /* Darker blue on hover */
+    color:#007bff;
 }
 
 .footer {
@@ -367,6 +383,12 @@ header {
     flex: 1;
     min-width: 250px;
     margin: 10px 20px;
+    justify-content: space-between;    
+    padding: 20px;
+    margin: 20px; /* Space between blog posts */
+   
+    border-radius: 4px; /* Rounded corners for the posts */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for each post */
 }
 
 .footer h3 {
@@ -376,7 +398,7 @@ header {
 
 .footer p,
 .footer a {
-    color: #ccc;
+    color: #d40812;
     text-decoration: none;
     margin: 5px 0;
     display: block;
