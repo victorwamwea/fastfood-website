@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<div>
     <header>
         <nav class="navbar">
                 <div class="navbar-logo">
@@ -23,7 +23,7 @@
                     <li><a href="#"><i class="fa-solid fa-martini-glass-citrus"></i> Drinks</a></li>
                 </ul>
                 <div class="navbar-actions">
-                    <a href="tel:+1234567890" class="call-btn">Call Us</a>
+                    <a href="tel:+1234567890" class="call-btn"><i class="fa-solid fa-phone"></i>Call Us.</a>
                     <a href="#" class="icon-btn"><i class="fas fa-search"></i></a>
                     <a href="#" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
                 </div>
@@ -33,6 +33,26 @@
         <div class="header-content">
             <h1>Enjoy Your Favorite Food with Family</h1>
             <a href="#" class="btn">Check Menu</a>
+            <div id="menuDropdown" class="menu-dropdown">
+                <h3>Burgers</h3>
+                <ul>
+                    <li>Classic Burger - $5.99</li>
+                    <li>Cheese Burger - $6.99</li>
+                    <li>Bacon Burger - $7.99</li>
+                </ul>
+                <h3>Fries</h3>
+                <ul>
+                    <li>Regular Fries - $2.99</li>
+                    <li>Cheese Fries - $3.99</li>
+                    <li>Chili Fries - $4.99</li>
+                </ul>
+                <h3>Drinks</h3>
+                <ul>
+                    <li>Soda - $1.99</li>
+                    <li>Milkshake - $3.99</li>
+                    <li>Lemonade - $2.99</li>
+                </ul>
+            </div>
         </div>
         <div class="header-image">
             <img src="burger.png" alt="Burger Image">
@@ -179,26 +199,29 @@
             <img src="welcome.png" alt="presentation">
         </div>
     </div>
-    <div class="container">
-        <h2>News & Blogs</h2>
-        <div class="blog-post">
-            <h3>New Burger Launch!</h3>
-            <p>We're excited to announce our new spicy burger that will tantalize your taste buds. Come and try it now!</p>
-            <a href="#" class="btn"> Read more </a>
-        </div>
-        <div class="blog-post">
-            <h3>Special Offer This Summer</h3>
-            <p>Get 20% off on all orders above $50. Hurry, this offer is valid till the end of July!</p>
-            <a href="#" class="btn">Read more</a>
-        </div>
-        <div class="blog-post">
-            <h3>Community Support</h3>
-            <p>We're proud to support our local community by sourcing ingredients from nearby farms.</p>
-            <a href="#" class="btn">Read more</a>
+    <div class="news-container">
+        <h2>News <span class="red-ampersand">&</span> Blogs</h2>
+        <div class="news-container">
+            
+            <div class="blog-post">
+                <h3>New Burger Launch!</h3>
+                <p>We're excited to announce our new spicy burger that will tantalize your taste buds. Come and try it now!</p>
+                <a href="#" class="btn"> Read more </a>
+            </div>
+            <div class="blog-post">
+                <h3>Special Offer This Summer</h3>
+                <p>Get 20% off on all orders above $50. Hurry, this offer is valid till the end of July!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="blog-post">
+                <h3>Community Support</h3>
+                <p>We're proud to support our local community by sourcing ingredients from nearby farms.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
         </div>
     </div>
         <div class="footer">
-            <div class="container">
+            <div class="footer-container">
                     <div class="column">
                         <h3>About Us</h3>
                         <p>We are a fast food chain dedicated to bringing you the best burgers and fries in town. Visit us for a delicious and satisfying meal.</p>
@@ -219,7 +242,7 @@
                         </div>
                     </div>
             </div>
-            <p>&copy; styled with <i class="fa-solid fa-heart"></i>by VICTOR</p>
+            <p>&copy; styled with <i class="fa-solid fa-heart"></i> by VICTOR</p>
         </div>
     
        
